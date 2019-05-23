@@ -17,3 +17,8 @@ def decrypt(key1: int, key2: int) -> str:
     decrypted: int = key1 ^ key2
     temp: bytes = decrypted.to_bytes((decrypted.bit_length() + 7) // 8, "big")
     return temp.decode()
+
+if __name__ == "__main__":
+    key1, key2 = encrypt("Pad One Time")
+    result: str = decrypt(key1, key2)
+    print(result)
