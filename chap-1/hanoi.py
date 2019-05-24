@@ -15,7 +15,7 @@ class Stack(Generic[T]):
     def __repr__(self) -> str:
         return repr(self._container)
 
-num_discs: int = 50
+num_discs: int = 4
 tower_a: Stack[int] = Stack()
 tower_b: Stack[int] = Stack()
 tower_c: Stack[int] = Stack()
